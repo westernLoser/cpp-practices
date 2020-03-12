@@ -32,7 +32,6 @@ int main() {
     std::thread t2(func2);
     t1.join();
     t2.join();
-    std::cout << 0 << std::endl;
     return 0;
 }
 
