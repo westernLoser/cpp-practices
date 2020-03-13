@@ -56,7 +56,7 @@ void HeapSort(vector<int>& data) {
 class Heap {
 public:
     Heap() { }
-    Heap(const vector<int>& data): _data(data) { Heapify(_data); }
+    explicit Heap(const vector<int>& data): _data(data) { Heapify(_data); }
 
     void push(int val) {
         _data.push_back(val);
